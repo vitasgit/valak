@@ -1,0 +1,25 @@
+.btn {
+	width: 50%;
+	color: white;
+	text-align: center;
+	background-color: $primary;
+	text-decoration: none;
+	font-size: 1.5em;
+	border-radius: 20px;
+	padding: .5em;
+	margin-top: 1.5em;
+	transition: background-color .14s linear;
+
+	&:hover {
+		background-color: lighten($primary, 5%);
+	}
+}
+
+.btn-cta {
+	background-color: $cta-color;
+	transition: background-color .14s linear;
+
+	&:hover {
+		background-color: lighten($cta-color, 5%);
+	}
+}

@@ -1,0 +1,21 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__address {
+		color: black;
+		padding: 1em 0;
+	}
+}
+
+.footer-social {
+	&__item {
+		margin-right: .5em;
+	}
+
+	&__link {
+		color: lighten(#3D444AFF, 30%);
+		font-size: .85em;
+	}
+}

@@ -1,0 +1,25 @@
+.navbar {
+	&__menu {
+		width: 35px;
+		height: 35px;
+		fill: white;
+	}
+}
+
+.navbar-list {
+	display: flex;
+
+	&__link {
+		color: white;
+		font-weight: bold;
+		letter-spacing: .2em;
+		padding: 1em;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: color .3s ease;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+}

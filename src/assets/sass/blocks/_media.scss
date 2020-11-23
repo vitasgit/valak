@@ -1,0 +1,21 @@
+@media screen and (min-width: 1000px) {
+  .hide-desktop  {
+    display: none;
+  }
+}
+
+@media  (max-width: 1000px) {
+  .navbar-list  {
+    display: none;
+  }
+}
+
+@media  (max-width: 675px) {
+	.page__subhead {
+		font-size: 1.5em;
+	}
+
+	.btn {
+		width: 80%;
+	}
+}
