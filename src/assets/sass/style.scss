@@ -2,9 +2,16 @@
 
 
 /* Default styles */
+html {
+	font-size: 62.5%;
+}
+
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background-color: #181818;
+    font-size: 1.4rem;
+    color: $white;
 }
 
 *,
@@ -37,14 +44,20 @@ img {
 }
 
 /* Blocks */
+@import "blocks/_page.scss";
+@import "blocks/_header.scss";
+@import "blocks/_sidebar.scss";
+@import "blocks/_main.scss";
+@import "blocks/_container.scss";
+
+
+
+/* old styles */
 @import "blocks/_btn.scss";
 @import "blocks/_scrollbar.scss";
 @import "blocks/_scrolldown.scss";
 
-@import "blocks/_page.scss";
 @import "blocks/_section.scss";
-@import "blocks/_container.scss";
-@import "blocks/_header.scss";
 @import "blocks/_navbar.scss";
 @import "blocks/_logo-box.scss";
 @import "blocks/_hero.scss";

@@ -1,7 +1,14 @@
 /* Default styles */
+html {
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background-color: #181818;
+    font-size: 1.4rem;
+    color: #fff;
 }
 
 *,
@@ -37,46 +44,6 @@ img {
 }
 
 /* Blocks */
-.btn {
-    width: 50%;
-    color: white;
-    text-align: center;
-    background-color: #00C2FFFF;
-    text-decoration: none;
-    font-size: 1.5em;
-    border-radius: 20px;
-    padding: .5em;
-    margin-top: 1.5em;
-    -webkit-transition: background-color .14s linear;
-    -o-transition: background-color .14s linear;
-    transition: background-color .14s linear;
-}
-
-.btn:hover {
-    background-color: #1ac8ff;
-}
-
-.btn-cta {
-    background-color: #00CC80FF;
-    -webkit-transition: background-color .14s linear;
-    -o-transition: background-color .14s linear;
-    transition: background-color .14s linear;
-}
-
-.btn-cta:hover {
-    background-color: #00e690;
-}
-
-body::-webkit-scrollbar {
-    width: 0.5em;
-    background-color: transparent;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: #00C2FFFF;
-    border-radius: 1em;
-}
-
 .page {
     overflow: hidden;
 }
@@ -132,8 +99,80 @@ body::-webkit-scrollbar-thumb {
 }
 
 .page-figure__caption {
-    color: #00C2FFFF;
+    color: #202020;
     font-weight: bold;
+}
+
+.header {
+    width: calc(100% - 300px);
+    height: 30px;
+    background-color: #444;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.main {
+    padding-top: 10rem;
+    padding-left: 300px;
+}
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+/* old styles */
+.btn {
+    width: 50%;
+    color: white;
+    text-align: center;
+    background-color: #202020;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+    padding: .5em;
+    margin-top: 1.5em;
+    -webkit-transition: background-color .14s linear;
+    -o-transition: background-color .14s linear;
+    transition: background-color .14s linear;
+}
+
+.btn:hover {
+    background-color: #2d2d2d;
+}
+
+.btn-cta {
+    background-color: #00CC80FF;
+    -webkit-transition: background-color .14s linear;
+    -o-transition: background-color .14s linear;
+    transition: background-color .14s linear;
+}
+
+.btn-cta:hover {
+    background-color: #00e690;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #202020;
+    border-radius: 1em;
 }
 
 .section-hero {
@@ -146,19 +185,6 @@ body::-webkit-scrollbar-thumb {
 
 .section-footer {
     margin: 4rem 0 1rem 0;
-}
-
-.header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 2rem;
 }
 
 .navbar__menu {
@@ -186,22 +212,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar-list__link:hover {
-    color: #00C2FFFF;
-}
-
-.hero {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 20%;
+    color: #202020;
 }
 
 body {
@@ -301,7 +312,7 @@ body {
     align-items: center;
     width: 100%;
     text-align: center;
-    background: #00C2FFFF;
+    background: #202020;
     padding: 4rem 1rem;
     -webkit-transition: all .4s ease;
     -o-transition: all .4s ease;
@@ -310,8 +321,8 @@ body {
 }
 
 .services-list__item:hover {
-    -webkit-box-shadow: 0px 15px 30px rgba(0, 194, 255, 0.3);
-    box-shadow: 0px 15px 30px rgba(0, 194, 255, 0.3);
+    -webkit-box-shadow: 0px 15px 30px rgba(32, 32, 32, 0.3);
+    box-shadow: 0px 15px 30px rgba(32, 32, 32, 0.3);
     background: #fff;
 }
 

@@ -10,37 +10,18 @@
 <!-- Bonjour le monde -->
 
 <div class="page">
-	<section class="hero-section">
-		<div class="container">
-			{{> header }}
-		
-			{{> hero }}
-		</div>
-	</section>
 
-	<section class="services-section">
-		<div class="container">
-			{{> services }}
-		</div>
-	</section>
+	{{> header }}
 
-	<section class="portfolio-section">
-		<div class="container">
-			{{> portfolio }}
-		</div>
-	</section>
+	{{> sidebar }}
 
-	<section class="team-section">
-		<div class="container">
-			{{> team }}
-		</div>
-	</section>
-
-	<section class="footer-section">
-		<div class="container">
-			{{> footer }}
-		</div>
-	</section>
+	<div class="main">
+		<section class="hero-section">
+			<div class="container">
+				{{> hero }}
+			</div>
+		</section>
+	</div>
 </div>
 
 <script src="assets/js/app.min.js"></script>
