@@ -143,6 +143,28 @@ img {
     object-fit: cover;
 }
 
+.sidebar__content, .sidebar__footer {
+    padding: 0 2rem;
+}
+
+.sidebar__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.profile__text {
+    font-size: 1.2rem;
+    text-align: center;
+    border-top: 1px solid #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+    padding: 3rem 0;
+    margin: 3rem 0;
+}
+
 .profile-figure {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -186,37 +208,24 @@ img {
     margin: 0 .75rem;
 }
 
-/* old styles */
 .btn {
-    width: 50%;
-    color: white;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1.1em 2.1em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 1.1;
+    color: #fff;
+    background-color: #121212;
     text-align: center;
-    background-color: #202020;
     text-decoration: none;
-    font-size: 1.5em;
-    border-radius: 20px;
-    padding: .5em;
-    margin-top: 1.5em;
-    -webkit-transition: background-color .14s linear;
-    -o-transition: background-color .14s linear;
-    transition: background-color .14s linear;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #2d2d2d;
-}
-
-.btn-cta {
-    background-color: #00CC80FF;
-    -webkit-transition: background-color .14s linear;
-    -o-transition: background-color .14s linear;
-    transition: background-color .14s linear;
-}
-
-.btn-cta:hover {
-    background-color: #00e690;
-}
-
+/* old styles */
 body::-webkit-scrollbar {
     width: 0.5em;
     background-color: transparent;
@@ -424,9 +433,5 @@ body {
 @media (max-width: 675px) {
     .page__subhead {
         font-size: 1.5em;
-    }
-
-    .btn {
-        width: 80%;
     }
 }

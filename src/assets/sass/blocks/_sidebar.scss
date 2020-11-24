@@ -23,4 +23,14 @@
 	&__img {
 		object-fit: cover;
 	}
+
+	&__content,
+	&__footer {
+		padding: 0 2rem;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+	}
 }
