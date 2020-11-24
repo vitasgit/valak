@@ -2,7 +2,8 @@
 	width: $sidebar-width;
 	height: 100vh;
 
-	background-color: #ccc;
+	background-color: $primary;
+	box-shadow: 5px 0 15px rgba(#050505, .1);
 
 	position: fixed;
 	top: 0;
@@ -10,5 +11,16 @@
 
 	z-index: $sidebare-z-index;
 
+}
 
+.sidebar {
+	&__header {
+		height: 180px;
+
+		background-color: $secondary;
+	}
+
+	&__img {
+		object-fit: cover;
+	}
 }

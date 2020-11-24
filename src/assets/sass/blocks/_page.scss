@@ -36,10 +36,6 @@
 	align-items: center;
 	margin: 0;
 
-	&__img {
-		width: 108px;
-	}
-
 	&__quote {
 		font-size: 1.2em;
 		text-align: center;
@@ -48,7 +44,7 @@
 	}
 
 	&__caption {
-		color: $primary;
+		color: $white;
 		font-weight: bold;
 	}
 }

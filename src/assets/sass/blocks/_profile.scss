@@ -1,0 +1,29 @@
+.profile {
+
+}
+
+.profile-figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__avatar {
+		width: 10rem;
+		height: 10rem;
+		margin-bottom: 2rem;
+
+		border: 2px solid $white;
+		box-shadow: 0 7px 20px rgba(#000, .25);
+		border-radius: 50%;
+	}
+
+	&__caption {
+		font-size: 1.8rem;
+	}
+
+	&__subcaption {
+		font-size: 1.4rem;
+		font-weight: 300;
+		color: #dedede;
+	}
+}

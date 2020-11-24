@@ -8,6 +8,7 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     background-color: #181818;
     font-size: 1.4rem;
+    line-height: 1.5;
     color: #fff;
 }
 
@@ -87,10 +88,6 @@ img {
     margin: 0;
 }
 
-.page-figure__img {
-    width: 108px;
-}
-
 .page-figure__quote {
     font-size: 1.2em;
     text-align: center;
@@ -99,8 +96,14 @@ img {
 }
 
 .page-figure__caption {
-    color: #202020;
+    color: #fff;
     font-weight: bold;
+}
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 5rem;
 }
 
 .header {
@@ -113,25 +116,74 @@ img {
     z-index: 1000;
 }
 
+.main {
+    padding-top: 10rem;
+    padding-left: 300px;
+}
+
 .sidebar {
     width: 300px;
     height: 100vh;
-    background-color: #ccc;
+    background-color: #202020;
+    -webkit-box-shadow: 5px 0 15px rgba(5, 5, 5, 0.1);
+    box-shadow: 5px 0 15px rgba(5, 5, 5, 0.1);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
 }
 
-.main {
-    padding-top: 10rem;
-    padding-left: 300px;
+.sidebar__header {
+    height: 180px;
+    background-color: #121212;
 }
 
-.container {
-    max-width: 70rem;
-    margin: 0 auto;
-    padding: 0 5rem;
+.sidebar__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.profile-figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.profile-figure__avatar {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+    border: 2px solid #fff;
+    -webkit-box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+.profile-figure__caption {
+    font-size: 1.8rem;
+}
+
+.profile-figure__subcaption {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #dedede;
+}
+
+.social {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.social__item {
+    margin: 0 .75rem;
 }
 
 /* old styles */
