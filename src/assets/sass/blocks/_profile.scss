@@ -23,6 +23,8 @@
 		border: 2px solid $white;
 		box-shadow: 0 7px 20px rgba(#000, .25);
 		border-radius: 50%;
+
+		position: relative;
 	}
 
 	&__caption {
