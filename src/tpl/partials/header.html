@@ -1,26 +1,50 @@
 <header class="header">
-	<nav class="navbar">
-    	<svg class="navbar__menu hide-desktop">
-    		<use xlink:href="#menu"></use>
-    	</svg>
+	<svg class="navbar__menu hide-desktop">
+		<use xlink:href="#menu"></use>
+	</svg>
+	<!-- fix me -->
+	<!-- fix me -->
+	<!-- fix me -->
 
-		<ul class="navbar-list">
-			<li class="navbar-list__item">
-				<a class="navbar-list__link" href="#">Home</a>
-			</li>
+	<div class="header__left">
+		<nav class="navbar">
+			<ul class="navbar-list">
+				<li class="navbar-list__item">
+					<a class="navbar-list__link" href="#">Главная</a>
+				</li>
 
-			<li class="navbar-list__item">
-				<a class="navbar-list__link" href="#">Services</a>
-			</li>
+				<li class="navbar-list__item">
+					<a class="navbar-list__link" href="#">Статьи</a>
+				</li>
 
-			<li class="navbar-list__item">
-				<a class="navbar-list__link" href="#">Portfolio</a>
-			</li>
+				<li class="navbar-list__item">
+					<a class="navbar-list__link" href="#">Обо мне</a>
+				</li>
 
-			<li class="navbar-list__item">
-				<a class="navbar-list__link" href="#">Team</a>
-			</li>
-		</ul>
-	</nav>
-	<!-- /.navbar -->
+				<li class="navbar-list__item">
+					<a class="navbar-list__link" href="#">Реклама</a>
+				</li>
+			</ul>
+			<!-- /.navbar-list -->
+		</nav>
+		<!-- /.navbar -->
+	</div>
+	<!-- /.header__left -->
+
+	<div class="header__right">
+		<nav class="navbar">
+			<ul class="navbar-list">
+				<li class="navbar-list__item">
+					<a class="navbar-list__link" href="#">Профиль</a>
+				</li>
+			</ul>
+			<!-- /.navbar-list -->
+		</nav>
+		<!-- /.navbar -->
+
+		<form class="search" action="/" method="post">
+			<input class="search__input" type="text" placeholder="Поиск по блогу">
+		</form>
+	</div>
+	<!-- /.header__right -->
 </header>

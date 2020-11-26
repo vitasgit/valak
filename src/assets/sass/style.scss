@@ -21,6 +21,13 @@ body {
 	box-sizing: border-box;
 }
 
+:active, 
+:hover, 
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
 h1, h2, h3, h4 {
 	margin: 0;
 	padding: 0;
@@ -48,6 +55,8 @@ img {
 @import "blocks/_page.scss";
 @import "blocks/_container.scss";
 @import "blocks/_header.scss";
+@import "blocks/_navbar.scss";
+@import "blocks/_search.scss";
 @import "blocks/_main.scss";
 @import "blocks/_sidebar.scss";
 @import "blocks/_profile.scss";
@@ -56,17 +65,16 @@ img {
 
 
 
-/* old styles */
-@import "blocks/_scrollbar.scss";
-@import "blocks/_scrolldown.scss";
+// /* old styles */
+// @import "blocks/_scrollbar.scss";
+// @import "blocks/_scrolldown.scss";
 
-@import "blocks/_section.scss";
-@import "blocks/_navbar.scss";
-@import "blocks/_logo-box.scss";
-@import "blocks/_hero.scss";
-@import "blocks/_portfolio.scss";
-@import "blocks/_services.scss";
-@import "blocks/_team.scss";
-@import "blocks/_footer.scss";
+// @import "blocks/_section.scss";
+// @import "blocks/_logo-box.scss";
+// @import "blocks/_hero.scss";
+// @import "blocks/_portfolio.scss";
+// @import "blocks/_services.scss";
+// @import "blocks/_team.scss";
+// @import "blocks/_footer.scss";
 
-@import "blocks/_media.scss";
+ @import "blocks/_media.scss";

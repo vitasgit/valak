@@ -1,0 +1,22 @@
+.search {
+	width: 100%;
+	max-width: 21rem;
+	background-color: $primary;
+
+	&__input {
+		display: block;
+		background: transparent;
+		border: none;
+		padding: 1.2rem 2rem;
+
+		font-family: inherit;
+		font-size: 1.2rem;
+
+		color: $white;
+
+		&::placeholder {
+			color: rgba($white, .25)
+		}
+
+	}
+}
