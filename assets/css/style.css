@@ -156,6 +156,18 @@ img {
     display: flex;
 }
 
+.navbar-list__item {
+    position: relative;
+}
+
+.navbar-list__item:hover .navbar-list__link {
+    background-color: #3137c9;
+}
+
+.navbar-list__item:hover > .subnav {
+    display: block;
+}
+
 .navbar-list__link {
     display: block;
     color: white;
@@ -172,8 +184,48 @@ img {
     transition: background-color .2s ease;
 }
 
-.navbar-list__link:hover {
+.navbar-list__link.has-subnav {
+    position: relative;
+    padding-right: 3.5rem;
+}
+
+.navbar-list__link.has-subnav:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    right: 1.2em;
+    top: calc(50% - 1px);
+}
+
+.subnav {
+    display: none;
+    width: 19.67rem;
+    padding: .5rem 0;
     background-color: #3137c9;
+    -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.subnav__link {
+    display: block;
+    padding: .42rem 1.2rem;
+    color: #fff;
+    font-family: 1.2rem;
+    text-decoration: none;
+    -webkit-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+}
+
+.subnav__link:hover {
+    background-color: #2c31b4;
 }
 
 .search {

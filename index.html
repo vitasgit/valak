@@ -50,7 +50,7 @@
 
 	<header class="header">
 		<svg class="navbar__menu hide-desktop">
-			<use xlink:href="#menu"></use>
+			<use xlink has-subnav:href="#menu"></use>
 		</svg>
 		<!-- fix me -->
 		<!-- fix me -->
@@ -64,7 +64,19 @@
 					</li>
 	
 					<li class="navbar-list__item">
-						<a class="navbar-list__link" href="#">Статьи</a>
+						<a class="navbar-list__link has-subnav" href="#">Статьи</a>
+	
+						<ul class="subnav">
+							<li class="subnav__item">
+								<a class="subnav__link" href="#">Создание сайтов</a>
+							</li>
+							<li class="subnav__item">
+								<a class="subnav__link" href="#">Интернет-маркетинг</a>
+							</li>
+							<li class="subnav__item">
+								<a class="subnav__link" href="#">Продвижение видео</a>
+							</li>
+						</ul>
 					</li>
 	
 					<li class="navbar-list__item">
@@ -86,6 +98,10 @@
 				<ul class="navbar-list">
 					<li class="navbar-list__item">
 						<a class="navbar-list__link" href="#">Профиль</a>
+					</li>
+	
+					<li class="navbar-list__item">
+						<a class="navbar-list__link" href="#">Выйти</a>
 					</li>
 				</ul>
 				<!-- /.navbar-list -->
