@@ -45,11 +45,6 @@ p {
 	margin: 0;
 }
 
-img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
 
 /* Blocks */
 @import "blocks/_page.scss";
@@ -64,6 +59,7 @@ img {
 @import "blocks/_search.scss";
 @import "blocks/_main.scss";
 @import "blocks/_stories.scss";
+@import "blocks/_add-post.scss";
 
 
 

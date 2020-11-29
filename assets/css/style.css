@@ -45,12 +45,6 @@ p {
     margin: 0;
 }
 
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 /* Blocks */
 .page {
     overflow: hidden;
@@ -406,6 +400,7 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 13px;
     grid-template-rows: 195px;
+    margin-bottom: 3rem;
 }
 
 .stories__item {
@@ -480,6 +475,95 @@ img {
     -o-transition: transform 1.5s ease-in-out;
     transition: transform 1.5s ease-in-out;
     transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
+}
+
+.add-post {
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+    background-color: #121212;
+    -webkit-box-shadow: 0 15px 45px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+}
+
+.add-post__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.add-post__form-actions {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.add-post__textarea {
+    display: block;
+    border: none;
+    resize: none;
+    background: transparent;
+    min-width: 80%;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+
+.add-post__textarea::-webkit-input-placeholder {
+    color: #d2d2d2;
+}
+
+.add-post__textarea::-moz-placeholder {
+    color: #d2d2d2;
+}
+
+.add-post__textarea:-ms-input-placeholder {
+    color: #d2d2d2;
+}
+
+.add-post__textarea::-ms-input-placeholder {
+    color: #d2d2d2;
+}
+
+.add-post__textarea::placeholder {
+    color: #d2d2d2;
+}
+
+.add-post__file, .add-post__send {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    background: #ededed;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.add-post__send {
+    background-color: #3137c9;
+    margin-left: 1.5rem;
+}
+
+.add-post__input {
+    display: none;
 }
 
 @media screen and (min-width: 1000px) {
