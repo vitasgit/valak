@@ -39,6 +39,10 @@
 		text-transform: uppercase;
 		transition: background-color .2s ease;
 
+		&:hover {
+			text-decoration: none;
+		}
+
 		&.has-subnav {
 			position: relative;
 			padding-right: 3.5rem;

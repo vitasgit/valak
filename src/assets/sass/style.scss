@@ -45,6 +45,14 @@ p {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 
 /* Blocks */
 @import "blocks/_page.scss";
@@ -61,6 +69,7 @@ p {
 @import "blocks/_stories.scss";
 @import "blocks/_add-post.scss";
 @import "blocks/_post.scss";
+@import "blocks/_related.scss";
 @import "blocks/_embed.scss";
 @import "blocks/_pagination.scss";
 
