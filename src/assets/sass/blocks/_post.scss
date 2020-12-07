@@ -59,6 +59,14 @@
 		}
 	}
 
+	&__subtitle {
+		margin: 3rem 0 2rem 0;
+		
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: $white;
+	}
+
 	&__title-link {
 		color: $white;
 		text-decoration: none;

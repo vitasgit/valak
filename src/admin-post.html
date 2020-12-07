@@ -96,7 +96,7 @@ title: post
 		<!-- /.post__text -->
 
 		<div class="related">
-			<h3 class="related__title">
+			<h3 class="post__subtitle">
 				Интересно почитать
 			</h3>
 
@@ -136,22 +136,91 @@ title: post
 		</div>
 		<!-- /.related -->
 
-		<div class="comments">
-			<h3 class="comments__title">
-				Обсуждение
-			</h3>
+		<h3 class="post__subtitle">
+			Обсуждение
+		</h3>
 
-			<form class="form" action="/" method="post">
-				<div class="form__group">
-					<textarea class="form__control form__control--textarea" name="coment-text" placeholder="Текст комментария"></textarea>
+		<form class="form" action="/" method="post">
+			<div class="form__group">
+				<textarea class="form__control form__control--textarea" name="coment-text" placeholder="Текст комментария"></textarea>
 
-					<span class="form__line"></span>
+				<span class="form__line"></span>
+			</div>
+
+			<button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+		</form>
+
+		<ul class="comments">
+			<li class="comments__item">
+				<div class="comments__header">
+					<img
+						class="comments__avatar" 
+						alt="avatar picture"
+						src="https://placehold.it/30" 
+					>
+
+					<div class="comments__author">
+						<div class="comments__name">Дмитрий Валак</div>
+
+						<time class="comments__pubdate" datetime="2020-12-21 19:21">1 неделю назад</time>
+					</div>
 				</div>
 
-				<button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
-			</form>
-		</div>
-		<!-- comments -->
+				<div class="comments__text">
+					Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Nam quibusdam reiciendis, quia consequuntur esse, mollitia. Sint nobis suscipit cupiditate omnis rem beatae, labore ipsam aspernatur natus id commodi, in error?
+				</div>
+
+				<button class="comments__reply" type="button">Ответить</button>
+
+				<ul class="comments">
+					<li class="comments__item">
+						<div class="comments__header">
+							<img
+								class="comments__avatar" 
+								alt="avatar picture"
+								src="https://placehold.it/30" 
+							>
+
+							<div class="comments__author">
+								<div class="comments__name">Дмитрий Валак</div>
+
+								<time class="comments__pubdate" datetime="2020-12-21 19:21">1 неделю назад</time>
+							</div>
+						</div>
+
+						<div class="comments__text">
+							Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Nam quibusdam reiciendis, quia consequuntur esse, mollitia. Sint nobis suscipit cupiditate omnis rem beatae, labore ipsam aspernatur natus id commodi, in error?
+						</div>
+
+						<button class="comments__reply" type="button">Ответить</button>
+					</li>
+				</ul>
+				<!-- /.comments -->
+			</li>
+
+			<li class="comments__item">
+				<div class="comments__header">
+					<img
+						class="comments__avatar" 
+						alt="avatar picture"
+						src="https://placehold.it/30" 
+					>
+
+					<div class="comments__author">
+						<div class="comments__name">Дмитрий Валак</div>
+
+						<time class="comments__pubdate" datetime="2020-12-21 19:21">1 неделю назад</time>
+					</div>
+				</div>
+
+				<div class="comments__text">
+					Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Nam quibusdam reiciendis, quia consequuntur esse, mollitia. Sint nobis suscipit cupiditate omnis rem beatae, labore ipsam aspernatur natus id commodi, in error?
+				</div>
+
+				<button class="comments__reply" type="button">Ответить</button>
+			</li>
+		</ul>
+		<!-- /.comments -->
 	</div>
 	<!-- /.post__content -->
 </article>
