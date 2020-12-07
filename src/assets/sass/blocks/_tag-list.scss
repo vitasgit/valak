@@ -1,0 +1,17 @@
+.tag-list {
+	flex-wrap: wrap;
+	margin-bottom: 3rem;
+
+	&__item{
+		margin: 0 1rem 1rem 0;
+		padding: .4rem .9rem;
+
+		color: $white;
+		background-color: #EA8C1E;
+		border-radius: 3px;
+
+		font-size: 1.1rem;
+		line-height: 1.2;
+		text-align: center;
+	}
+}
