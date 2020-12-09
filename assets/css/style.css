@@ -967,6 +967,7 @@ a:hover {
 .form__group {
     margin-bottom: 1.5rem;
     position: relative;
+    border: none;
 }
 
 .form__line {
