@@ -970,6 +970,10 @@ a:hover {
     border: none;
 }
 
+.form__group--mb {
+    margin-bottom: 2rem;
+}
+
 .form__line {
     width: 0;
     height: 1px;
@@ -984,7 +988,7 @@ a:hover {
 }
 
 .form__control {
-    padding: .5rem 0;
+    padding: .5rem .75rem;
     display: block;
     width: 100%;
     background: none;
@@ -1108,6 +1112,43 @@ a:hover {
     font-size: 1.1rem;
     line-height: 1.2;
     text-align: center;
+}
+
+.cabinet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.cabinet__form {
+    width: 34rem;
+}
+
+.cabinet__avatar {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-left: 11rem;
+}
+
+.cabinet__avatar img {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.cabinet__file {
+    color: #3137c9;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cabinet__file input {
+    display: none;
+}
+
+.cabinet__file:hover {
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1000px) {

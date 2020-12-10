@@ -15,7 +15,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     
-    <title>Profile</title>
+    <title>cabinet</title>
 </head>
 <body>
 
@@ -294,17 +294,52 @@
 		<section class="post-section">
 			<div class="container">
 				
-				<h1 class="page__title">
+				<h1 class="page__head">
 					Профиль
 				</h1>
 				
 				<form class="form" action="/" method="post">
-					<div class="form__group">
-						<input class="form__control" type="text" placeholder="Ваше имя" value="Дмитрий Валак">
-						<span class="form__line"></span>
-					</div>
+					<div class="cabinet">
+						<div class="cabinet__form">
+							<div class="form__group form__group--mb">
+								<input class="form__control" type="text" placeholder="Ваше имя" value="Дмитрий Валак">
+								<span class="form__line"></span>
+							</div>
 				
+							<div class="form__group form__group--mb">
+								<input class="form__control" type="email" placeholder="Ваша почта" value="alex.provo@mail.com">
+								<span class="form__line"></span>
+							</div>
+				
+							<div class="form__group form__group--mb">
+								<input class="form__control" type="password" placeholder="Новый пароль">
+								<span class="form__line"></span>
+							</div>
+				
+							<div class="form__group form__group--mb">
+								<input class="form__control" type="password" placeholder="Подтвердите пароль">
+								<span class="form__line"></span>
+							</div>
+						</div>
+				
+						<div class="cabinet__avatar">
+							<img 
+								alt=""
+								src="https://placehold.it/150" 
+							>
+				
+							<label class="cabinet__file">
+								<input type="file">
+								Выбрать файл
+							</label>
+						</div>
+						<!-- /.cabinet__avatar -->
+					</div>
+					<!-- /.cabinet -->
+				
+					<button class="btn btn--blue btn--rounded btn--sm" type="submit">Сохранить</button>
 				</form>
+				<!-- /.form -->
 			</div>
 		</section>
 	</div>
