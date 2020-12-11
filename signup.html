@@ -15,7 +15,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     
-    <title>cabinet</title>
+    <title>Signup</title>
 </head>
 <body>
 
@@ -294,54 +294,37 @@
 		<section class="post-section">
 			<div class="container">
 				
-				<h1 class="page__head">
-					Профиль
+				<h1 class="page__head page__head--center">
+					Регистрация
 				</h1>
 				
-				<form class="form" action="/" method="post">
-					<div class="cabinet">
-						<div class="cabinet__form">
-							<div class="form__group form__group--mb">
-								<input class="form__control" type="text" placeholder="Ваше имя" value="Дмитрий Валак">
-								<span class="form__line"></span>
-							</div>
-				
-							<div class="form__group form__group--mb">
-								<input class="form__control" type="email" placeholder="Ваша почта" value="alex.provo@mail.com">
-								<span class="form__line"></span>
-							</div>
-				
-							<div class="form__group form__group--mb">
-								<input class="form__control" type="password" placeholder="Новый пароль">
-								<span class="form__line"></span>
-							</div>
-				
-							<div class="form__group form__group--mb">
-								<input class="form__control" type="password" placeholder="Подтвердите пароль">
-								<span class="form__line"></span>
-							</div>
+				<div class="signup-box">
+					<form class="form form--auth form--center" action="/">
+						<div class="form__group form__group--mb">
+							<input class="form__control" type="text" placeholder="Ваше имя">
+							<span class="form__line"></span>
 						</div>
 				
-						<div class="cabinet__avatar">
-							<img 
-								alt=""
-								src="https://placehold.it/150" 
-							>
-				
-							<label class="cabinet__file">
-								<input type="file">
-								Выбрать файл
-							</label>
+						<div class="form__group form__group--mb">
+							<input class="form__control" type="email" placeholder="Ваша почта">
+							<span class="form__line"></span>
 						</div>
-						<!-- /.cabinet__avatar -->
-					</div>
-					<!-- /.cabinet -->
 				
-					<div class="form__footer">
-						<button class="btn btn--blue btn--rounded btn--sm" type="submit">Сохранить</button>
-					</div>
-				</form>
-				<!-- /.form -->
+						<div class="form__group form__group--mb">
+							<input class="form__control" type="password" placeholder="Пароль">
+							<span class="form__line"></span>
+						</div>
+				
+						<div class="form__group form__group--mb">
+							<input class="form__control" type="password" placeholder="Подтвердите пароль">
+							<span class="form__line"></span>
+						</div>
+				
+						<div class="form__group">
+							<button class="btn btn--blue btn--rounded btn--sm">Регистрация</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</section>
 	</div>

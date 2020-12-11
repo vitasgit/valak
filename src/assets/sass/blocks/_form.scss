@@ -1,4 +1,8 @@
 .form {
+	&--auth {
+		width: 28rem;
+	}
+
 	&__group {
 		margin-bottom: 1.5rem;
 		position: relative;
