@@ -13,6 +13,10 @@ body {
     font-size: 1.4rem;
     line-height: 1.5;
     color: $white;
+
+    &.no-scrool {
+    	overflow: hidden;
+    }
 }
 
 *,
@@ -78,6 +82,7 @@ a {
 @import "blocks/_tag-list.scss";
 @import "blocks/_cabinet.scss";
 @import "blocks/_signup.scss";
+@import "blocks/_modal.scss";
 
 
 

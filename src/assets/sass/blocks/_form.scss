@@ -1,4 +1,11 @@
 .form {
+
+	&-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
 	&--auth {
 		width: 28rem;
 		display: block;
