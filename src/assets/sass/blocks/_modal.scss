@@ -19,12 +19,16 @@
 	&__content {
 		width: 100%;
 		max-width: 500px;
-		padding: 8rem 8rem 2.5rem 8rem;
+		padding: 8rem;
 
 		background-color: $primary;
 		border-radius: 5px;
 
 		position: relative;
+
+		&--contact {
+			padding-bottom: 2.5rem;
+		}
 	}
 
 	&__close {
