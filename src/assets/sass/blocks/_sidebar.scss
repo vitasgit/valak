@@ -11,6 +11,10 @@
 
 	z-index: $sidebare-z-index;
 
+	@include breakpoint($tablet-bp) {
+	    display: none;
+	}
+
 }
 
 .sidebar {
